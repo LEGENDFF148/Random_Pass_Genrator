@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Genrator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1> Random Password Genrator</h1>
+        <form action="">
+            <input type="checkbox" id="allowUperCase">
+            <label for="allowLowerCase">allowUperCase</label>
+            <br>
+            <input type="checkbox" id="allowLowerCase">
+            <label for="allowLowerCase">allowLowerCase</label>
+            <br>
+            <input type="checkbox" id="allowNumbers">
+            <label for="allowLowerCase">allowNumbers</label>
+            <br>
+            <input type="checkbox" id="allowSymbols">
+            <label for="allowLowerCase">allowSymbols</label><br>
+            <input type="number" id="length" min="1" value="10">
+            <br>
+            <button onclick="genrate(event)">Genrate</button>
+        </form>
+        <div id="res"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
